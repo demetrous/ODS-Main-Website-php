@@ -1,0 +1,26 @@
+
+name = ODS Theme
+description = Office of Decision Support Theme
+package = Core
+; version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/legacy_style.css
+stylesheets[all][] = css/style.css
+
+scripts[] = js/odstheme.js
+
+regions[header] = Header
+regions[custom_slides] = Slideshow
+regions[content] = Content
+regions[help] = Help
+regions[page_top] = Page Top
+regions[page_bottom] = Page Bottom
+regions[quick_links_box] = Quick Links Box
+regions[resources_box] = Resources Box
+regions[news_box] = News Box
+regions[right_menu] = Right Menu
+regions[footer_column_1] = Footer Column 1
+regions[footer_column_2] = Footer Column 2
+regions[footer_column_3] = Footer Column 3
+regions[footer_column_4] = Footer Column 4
