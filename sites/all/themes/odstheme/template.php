@@ -22,7 +22,7 @@ function odstheme_preprocess_page(&$variables){
 			  
 				foreach ($delta as $item) {		
 
-					if($item['tid']=='2'){
+					if($item['tid']=='1'){
 						$variables['show_right_menu'] = true;
 						drupal_add_css(path_to_theme() . '/css/style_about_menu.css', array('group' => CSS_THEME, 'weight' => '0'));
 						break;

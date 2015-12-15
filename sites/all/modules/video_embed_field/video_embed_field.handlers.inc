@@ -197,7 +197,10 @@ function video_embed_field_handle_youtube($url, $settings) {
   $settings['wmode'] = 'opaque';
   $settings_str = urlencode(_video_embed_code_get_settings_str($settings));
 
-  $output['#markup'] = '<iframe class="' . check_plain($class) . '" width="' . check_plain($settings['width']) . '" height="' . check_plain($settings['height']) . '" src="//www.youtube.com/embed/' . $id . '?' . $settings_str . '" frameborder="0" allowfullscreen></iframe>';
+  //Use YouTube API
+  $ytapi = 'enablejsapi=1;';
+
+  $output['#markup'] = '<iframe class="' . check_plain($class) . '" width="' . check_plain($settings['width']) . '" height="' . check_plain($settings['height']) . '" src="//www.youtube.com/embed/' . $id . '?' . $ytapi . $settings_str . '" frameborder="0" allowfullscreen></iframe>';
 
   return $output;
 }
