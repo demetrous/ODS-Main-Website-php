@@ -53,25 +53,27 @@
 		}
 	 
 		// Setup the slider control
-		slider = $("#flexslider-1")
-			.flexslider({
-				// Before you go to change slides, make sure you can!
-				before: function(){			    		
-					if(!canSlide)
-						slider.flexslider("stop");
-				}
-			});
+		
+		if ($("#flexslider-1").length) {
+			slider = $("#flexslider-1")
+				.flexslider({
+					// Before you go to change slides, make sure you can!
+					before: function(){			    		
+						if(!canSlide)
+							slider.flexslider("stop");
+					}
+				});
 
-		slider.live("click", ".flex-prev, .flex-next", function(){
-			canSlide = true;
-			slider.flexslider("play");
-			$('.flexslider iframe').each(function(){
-				$(this).data('player').stopVideo();
+			slider.live("click", ".flex-prev, .flex-next", function(){
+				canSlide = true;
+				slider.flexslider("play");
+				$('.flexslider iframe').each(function(){
+					$(this).data('player').stopVideo();
+				});
 			});
-		});
 	
 	
-	
+		}
 	
 	
 		}
