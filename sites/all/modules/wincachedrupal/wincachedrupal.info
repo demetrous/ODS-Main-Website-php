@@ -7,9 +7,9 @@ php = 5.5
 ; Files that contain classes:
 files[] = tests/wincache.test
 
-; Information added by Drupal.org packaging script on 2015-11-16
-version = "7.x-2.0"
+; Information added by Drupal.org packaging script on 2015-12-17
+version = "7.x-1.10"
 core = "7.x"
 project = "wincachedrupal"
-datestamp = "1447693756"
+datestamp = "1450370352"
 
