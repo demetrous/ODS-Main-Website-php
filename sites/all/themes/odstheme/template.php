@@ -4,7 +4,7 @@ function odstheme_breadcrumb($variables){
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
     $breadcrumb[] = drupal_get_title();
-    $breadcrumb[0] = l('ODS Home',NULL);
+    $breadcrumb[0] = l('IADS Home',NULL);
     return '<div class="breadcrumb">' . implode(' <span class="breadcrumb-separator">&raquo;</span> ', $breadcrumb) . '</div>';
   }
 }

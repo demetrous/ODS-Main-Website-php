@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			if ($breadcrumb && $breadcrumb != '<div class="breadcrumb"></div>'):
 				  print '<a href="http://www.unlv.edu/">UNLV Home</a> » ' . $breadcrumb;
 			else:
-				  print '<div class="breadcrumb"><a href="http://www.unlv.edu/">UNLV Home</a> » ODS Home</div>'; 
+				  print '<div class="breadcrumb"><a href="http://www.unlv.edu/">UNLV Home</a> » IADS Home</div>'; 
 			endif;
 		?>
 		
@@ -379,7 +379,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Address:</p>
 
 <ul>
-	<li>Office of Decision Support, UNLV</li>
+	<li>Office of Institutional Analysis &amp; Decision Support, UNLV</li>
     <li>PO Box 451022, 4505 S Maryland Pkwy</li>
 	<li>Las Vegas, NV 89154</li>
 	
