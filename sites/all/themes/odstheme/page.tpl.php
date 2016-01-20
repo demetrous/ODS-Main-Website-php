@@ -43,7 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 		<div id="name"><a href="<?php print $front_page; ?>" title="ODS Home Page">University of Nevada, Las Vegas
 				<br>
-				<span>Office of Decision Support</span></a>
+				<span>Institutional Analysis &amp; Decision Support</span></a>
 		</div>
 
 <div id="searchlinks">
@@ -397,7 +397,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--end #columncontainer-->
 
 <div id="bfbottom">
-<span class="bottomleft">Produced by <!--<a href="http://www.unlv.edu/web">-->Office of Decision Support</a> | © <?php echo date("Y"); ?> University of Nevada, Las Vegas</span> <span class="bottomright" style="display:none;"><a href="http://www.unlv.edu/web/feedback">Website Feedback</a></span></div>
+<span class="bottomleft">Produced by Office of Institutional Analysis &amp; Decision Support | © <?php echo date("Y"); ?> University of Nevada, Las Vegas</span> <span class="bottomright" style="display:none;"><a href="http://www.unlv.edu/web/feedback">Website Feedback</a></span></div>
 <!--end #bfbottom-->  </div>
 </div>
 <!--end #bigfoot-->

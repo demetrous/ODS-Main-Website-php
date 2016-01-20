@@ -172,6 +172,14 @@ u, center, font, dir, menu, strike, blink, h2 a, a h2, h3 a, a h3, h4 a, a h4, h
     width: inherit;
 }
 
+#block-system-main {
+    /* text-align: -webkit-center; */
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
 #object-wrapper {
 	position:relative;
 	
@@ -483,3 +491,12 @@ body.node-type-secondary-page a:link,
 a:visited {
 	color:#b10202;
 }
+
+#banner #name {
+	padding: 0 3px 0 5px;
+}
+
+#banner #name span {
+    font-size: 22px;
+}
+
