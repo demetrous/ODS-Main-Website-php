@@ -155,9 +155,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      <div id="crumbtrail">		
 		<?php
 			if ($breadcrumb && $breadcrumb != '<div class="breadcrumb"></div>'):
-				  print '<a href="http://www.unlv.edu/">UNLV Home</a> » ' . $breadcrumb;
+				  print '<a href="http://www.unlv.edu/">UNLV Home</a> &raquo; ' . $breadcrumb;
 			else:
-				  print '<div class="breadcrumb"><a href="http://www.unlv.edu/">UNLV Home</a> » IADS Home</div>'; 
+				  print '<div class="breadcrumb"><a href="http://www.unlv.edu/">UNLV Home</a> &raquo; IADS Home</div>'; 
 			endif;
 		?>
 		
@@ -297,9 +297,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
 	<div class="clear"></div>
 
-</div> <!-- end #bottom -->
+</div> <!-- end #bottom 
 
 <?php else :?>	
+	
 	<?php if(isset($show_right_menu) && $show_right_menu) :?>	
 	<div id="leftNav">
 			<div class="region region-left-navigation">
@@ -334,7 +335,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<?php endif; ?>
 	
 		<?php print render($title_prefix); ?>
-        <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?>1111</h1><?php endif; ?>
+        <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
         <?php print render($title_suffix); ?>
         <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
         <?php print render($page['help']); ?>
@@ -397,7 +398,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--end #columncontainer-->
 
 <div id="bfbottom">
-<span class="bottomleft">Produced by Office of Institutional Analysis &amp; Decision Support | © <?php echo date("Y"); ?> University of Nevada, Las Vegas</span> <span class="bottomright" style="display:none;"><a href="http://www.unlv.edu/web/feedback">Website Feedback</a></span></div>
+<span class="bottomleft">Produced by Office of Institutional Analysis &amp; Decision Support | &copy; <?php echo date("Y"); ?> University of Nevada, Las Vegas</span> <span class="bottomright" style="display:none;"><a href="http://www.unlv.edu/web/feedback">Website Feedback</a></span></div>
 <!--end #bfbottom-->  </div>
 </div>
 <!--end #bigfoot-->

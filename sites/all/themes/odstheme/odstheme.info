@@ -24,3 +24,8 @@ regions[footer_column_1] = Footer Column 1
 regions[footer_column_2] = Footer Column 2
 regions[footer_column_3] = Footer Column 3
 regions[footer_column_4] = Footer Column 4
+
+; *** REPORT LIST PAGE REGIONS
+regions[university_totals_box] = University Totals Box
+regions[colleges_box] = Colleges Box
+regions[programs_box] = Programs Box

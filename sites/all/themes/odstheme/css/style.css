@@ -125,11 +125,47 @@
 }
 
 .sf-menu.sf-style-simple-centre-aligned li li .sf-sub-indicator, .sf-menu.sf-style-simple-centre-aligned li li a > .sf-sub-indicator {
-    top: 8px;/*top: 13px;  dk61515*//*Rigth arrow at drop-down menu item*/
+    top: 7px;/*top: 13px;  dk61515*//*Rigth arrow at drop-down menu item*/
+	right:0.2em;
 }
 
 .sf-menu.sf-style-simple-centre-aligned.sf-navbar > li.last, .sf-menu.sf-style-simple-centre-aligned.sf-navbar li li li li.first, .sf-menu.sf-style-simple-centre-aligned.sf-vertical li li.first, .sf-menu.sf-style-simple-centre-aligned.sf-horizontal li li li.first {
     border-top-right-radius: 0px;
+}
+
+.sf-menu.sf-style-simple-centre-aligned.sf-vertical li:last-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal li li:last-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar li li li:last-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-vertical li > ul > li.firstandlast,
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal li > ul > li.firstandlast,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar li > ul > li.firstandlast {
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal > li:last-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal li li > ul > li.firstandlast,
+.sf-menu.sf-style-simple-centre-aligned.sf-vertical li li > ul > li.firstandlast,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar li li li > ul > li.firstandlast {
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#superfish-1 li ul li ul li {
+    margin: 0;
+    padding: 0 0 0px 0 !important;
+    height: 24px;
+    border-bottom: 1px solid #999;
+    top: 0;
+    background: #aaa;/*#db4242;*/
 }
 
 .sf-depth-2 .menuparent ul {
@@ -174,8 +210,8 @@ u, center, font, dir, menu, strike, blink, h2 a, a h2, h3 a, a h3, h4 a, a h4, h
 
 #block-system-main {
     /* text-align: -webkit-center; */
-    padding-top: 20px;
-    text-align: center;
+    padding-top: 0px;
+    /*text-align: center;*/
 }
 
 
@@ -492,11 +528,92 @@ a:visited {
 	color:#b10202;
 }
 
-#banner #name {
-	padding: 0 3px 0 5px;
+html body #banner #name {
+	padding: 0 3px 0 5px;	
+	margin-left:5px;
 }
 
-#banner #name span {
-    font-size: 22px;
+html body #banner #name a{
+	font-size: 0.9em;
 }
+
+html body #banner #name a span {
+    font-size: 1.54em;
+}
+
+
+#block-superfish-2 .sf-vertical,
+#block-superfish-2 .sf-vertical li {
+  width: 225px;
+}
+
+body.front #bottom #block-superfish-2 ul li a,
+body.front #bottom #block-superfish-2 ul li a:link,
+body.front #bottom #block-superfish-2 ul li a:visited,
+body.front #bottom #block-superfish-2 table a,
+body.front #bottom #block-superfish-2 table a:link,
+body.front #bottom #block-superfish-2 table a:visited {
+    text-decoration: none;
+	color: black;
+}
+
+#bottom  #block-superfish-2 ul li {
+    line-height: 1.35em;
+    padding-bottom: 0;
+}
+
+#bottom  #block-superfish-2 ul li {
+    line-height: 1.35em;
+    padding-bottom: 0;
+}
+
+#bottom  #superfish-2{
+	z-index:100 !important;
+	height:270px;
+}
+
+.view-image-list  .views-row{
+	margin-bottom: 50px;
+	padding-bottom:15px;
+	border-bottom: 1px dotted gray;
+}
+
+.view-image-list  .view-header h2 span a:link{	
+    float: right;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: transparent;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.view-image-list  .view-header{	
+	padding-bottom:5px;
+	border-bottom: 1px dotted gray;
+}
+
+.tabs ul.tabs {
+	padding-top:10px;
+}
+
+.node.node-iframe-fullscreen-page h2{
+	display:none;
+}
+
+.node-type-iframe-fullscreen-page {
+	overflow:hidden;
+}
+
+.node-iframe-fullscreen-page .field-item {
+	margin:0px;
+	padding:0px; 
+	height:100vh;
+}
+
+.node-iframe-fullscreen-page .field-item  iframe{
+	height:100%;
+	width:100%;
+
+}
+
+
 
